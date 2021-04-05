@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Social Video</title>
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/login.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
@@ -14,21 +16,43 @@
                 src="./assets/img/logo.png"
                 alt="Logo Social Media"
             />
-            <div class="header__menu">
-                <div class="header__menu--profile">
-                    <img src="./assets/img/profile.jpg" alt="User" />
-                    <p>Perfil</p>
-                </div>
-                <ul>
-                    <li><a href="#account">Cuenta</a></li>
-                    <li><a href="#logout">Cerrar Sesión</a></li>
-                </ul>
-            </div>
         </header>
         <main>
-            <section class="search__container">
-                <h2 class="search__container--tile">¿Qué quieres ver hoy?</h2>
-                <input class="search__container--search" type="text" placeholder="Buscar...">
+            <section class="login">
+                <div class="login__container">
+                    <h2 class="login__container--title">
+                        Iniciar sesión
+                    </h2>
+                    <form class="form__container">
+                        <input class="input" type="text" placeholder="Correo" />
+                        <input class="input" type="text" placeholder="Contraseña" />
+                        <button type="submit">Iniciar sesión</button>
+                        <div class="form__container--remember-me">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="remember"
+                                    id="cbx-remember"
+                                />
+                                Recuérdame
+                            </label>
+                            <a href="#register"> Olvidé mi contraseña </a>
+                        </div>
+                        <div class="form__container--social-media">
+                            <a href="/?google">
+                                <img src="./assets/icons/google.svg" alt="Google" />
+                                Inicia sesión con Google
+                            </a>
+                            <a href="/?twitter">
+                                <img src="./assets/icons/twitter.svg" alt="Twitter" />
+                                Inicia sesión con Twitter
+                            </a>
+                        </div>
+                        <div class="form__container--register">
+                            <p>No tienes nincuna cuenta <a href="#register">Regístrate</a></p>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
     </body>
