@@ -10,7 +10,15 @@ html {
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #21c08b;
+}
+
+body main {
+    height: 100%;
+    background-color: red;
 }
 
 .header {
@@ -27,15 +35,15 @@ body {
     align-self: center;
 }
 
-.login {
-    width: auto;
-    height: 700px;
+main {
+    width: 100%;
+    height: inherit;
     background: linear-gradient(#21c08b, #ab88ff);
 }
 
 .login__container {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 400px;
     height: 650px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -151,6 +159,7 @@ a {
 }
 
 .footer {
+    margin-top: auto;
     background-color: #ab88ff;
     display: flex;
 }
@@ -172,7 +181,7 @@ a {
 @media only screen and (max-width: 620px) {
     .login {
         width: 320px;
-        height: 600px;
+        /* height: 00px; */
         background: linear-gradient(#21c08b, #ab88ff);
     }
 
@@ -198,6 +207,7 @@ a {
     }
 
     .footer {
+        
         background-color: #ab88ff;
         display: flex;
         justify-content: space-around;
